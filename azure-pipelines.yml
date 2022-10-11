@@ -1,3 +1,5 @@
+name: FirstPipelineForGeoServerDatadir
+
 jobs:
 - deployment: geoserverdatadir
   environment: dev
