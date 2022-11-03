@@ -17,9 +17,12 @@ jobs:
            cd /mnt/data_dir
            git fetch --all
            git checkout datadir
+
            echo "committing local changes to the datadir"
            git add .
-           git commit -m "`date` datadir"
+
+           # allow it commit to fail in case there is no changes to commmit
+           git commit -m "`date` datadir" || true
 
            echo "pushing to Azure devops"
            git push dorset datadir
