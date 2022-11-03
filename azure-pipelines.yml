@@ -12,6 +12,7 @@ jobs:
         - script: |
            hostname
            cd /mnt/data_dir
+           git fetch --all
            git checkout datadir
            echo "committing local changes to the datadir"
            git add .
