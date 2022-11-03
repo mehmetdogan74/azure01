@@ -19,5 +19,5 @@ jobs:
            git commit -m "`date` datadir test"
 
            echo "pushing to Azure devops"
-           git push -u dorset datadir
+           git push dorset datadir
           displayName: GeoServer Datadir Save Latest Changes
