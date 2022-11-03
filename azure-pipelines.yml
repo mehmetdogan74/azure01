@@ -12,8 +12,11 @@ jobs:
         - script: |
            hostname
            cd /mnt/data_dir
-           git checkout datadir-test
+           git checkout datadir
+           echo "committing local changes to the datadir"
            git add .
            git commit -m "`date` datadir test"
-           git push -u dorset datadir-test
+
+           echo "pushing to Azure devops"
+           git push -u dorset datadir
           displayName: GeoServer Datadir Save Latest Changes
