@@ -10,6 +10,9 @@ jobs:
       deploy: 
         steps:       
         - script: |
+           #!/bin/bash
+           set -e
+
            hostname
            cd /mnt/data_dir
            git fetch --all
