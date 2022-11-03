@@ -16,7 +16,7 @@ jobs:
            git checkout datadir
            echo "committing local changes to the datadir"
            git add .
-           git commit -m "`date` datadir test"
+           git commit -m "`date` datadir"
 
            echo "pushing to Azure devops"
            git push dorset datadir
