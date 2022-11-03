@@ -12,7 +12,7 @@ jobs:
         - script: |
            hostname
            cd /mnt/data_dir
-           git checkout --track dorset/datadir-test
+           git checkout datadir-test
            git add .
            git commit -m "`date` datadir test"
            git push -u dorset datadir-test
